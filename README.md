@@ -1,6 +1,6 @@
-# Title: FINAL PROJECT OUTLINE
+# Title: Datasheets w/ Clinical Trials 
 
-#### By: Author Names
+#### By: Diego Cardenas & Kiran Treacy
 
 ## Abstract
 
