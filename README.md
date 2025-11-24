@@ -1,4 +1,4 @@
-# Title: Datasheets w/ Clinical Trials 
+# Title: Datasheets & Clinical Trials 
 
 #### By: Diego Cardenas & Kiran Treacy
 
