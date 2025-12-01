@@ -269,6 +269,7 @@ Cannot redistribute with identifiable patient data (not applicable here).
 Cannot claim the dataset is official or complete
 __________________________________________________________________________________________________________________________________________________
 8. Maintenance
+
 8.1 Who maintains the dataset?
 
 The Kaggle uploader (Parul Pandey)
