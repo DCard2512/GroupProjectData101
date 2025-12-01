@@ -16,7 +16,7 @@ Everyone should be interested in this analysis because COVID-19 impacted everyon
 _________________________________________________________________________________________________________________________________________________________
 ## Data Colleciton Considerations Using the Microsft Datasheet Format: 
 
-First, we need to ask what is the motivation for the dataset creation? So we ask...
+## First, we need to ask what is the motivation for the dataset creation? So we ask...
 
 Why was the dataset created? (e.g., were there specific tasks in mind, or a specific gap that needed to be filled?)
 
@@ -28,8 +28,63 @@ Kaggle
 
 NLP / information extraction: build models to extract structured fields from trial XML (e.g., interventions, eligibility criteria, outcomes), to standardize intervention names, or to create ontologies/term mappings. 
 
+Has the dataset been used for any tasks already? If so, where are the results so others can compare (e.g., links to published papers)?
+
+Kaggle notebooks / EDA: The dataset author and other users have published exploratory notebooks (example: “EDA on COVID-19 Clinical Trials” by the uploader), which show common descriptive analyses and are available on Kaggle. These notebooks are useful comparison baselines. 
+Kaggle
++1
+
+Cited in technical reports / project bibliographies: I found at least one project/technical PDF that cites the Kaggle dataset in its references (shows people have reused the Kaggle CSV as a convenient copy of registry entries). This is not a peer-reviewed paper but demonstrates reuse. 
+Pier Paolo Ippolito
+
+Wider literature using ClinicalTrials.gov data: Many peer-reviewed papers have used ClinicalTrials.gov (the original registry) to analyze COVID-19 trials (e.g., systematic summaries and results-timeliness studies). If you need peer-reviewed comparisons, cite studies that use ClinicalTrials.gov extracts (examples: JAMIA Open analysis of ClinicalTrials.gov COVID-19 studies and papers on results availability / timeliness). These studies typically describe their extraction and analysis pipelines so others can compare. 
+
+## Next we need to analyze the Datasets Compostition:
+
+What are the instances? (that is, examples; e.g., docu-
+ments, images, people, countries) Are there multiple types
+of instances? (e.g., movies, users, ratings; people, interac-
+tions between them; nodes, edges)
+
+Are relationships between instances made explicit in
+the data (e.g., social network links, user/movie ratings, etc.)?
 
 
+How many instances of each type are there?
+
+
+What data does each instance consist of? “Raw” data
+(e.g., unprocessed text or images)? Features/attributes?
+Is there a label/target associated with instances? If the
+instances are related to people, are subpopulations identified
+(e.g., by age, gender, etc.) and what is their distribution?
+
+
+Is everything included or does the data rely on external
+resources? (e.g., websites, tweets, datasets) If external
+resources, a) are there guarantees that they will exist, and
+remain constant, over time; b) is there an official archival
+version. Are there licenses, fees or rights associated with
+any of the data?
+
+
+Are there recommended data splits or evaluation mea-
+sures? (e.g., training, development, testing; accuracy/AUC)
+What experiments were initially run on this dataset?
+
+
+Have a summary of those results and, if available, provide
+the link to a paper with more information here.
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________
 ## Exploratory Data Analysis
 
 Show a few plots or some data tables that help your reader understand your data better. What are some initial questions that you were able to quickly answer? How do those questions lead you to a deeper analysis?
