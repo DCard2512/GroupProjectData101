@@ -2,300 +2,33 @@
 
 #### By: Diego Cardenas & Kiran Treacy
 
-## Abstract
+## Abstract: Here you type a 3-4 sentence summary of your final project.
 
-Here you type a 3-4 sentence summary of your final project.
-
-
+In this final project, we analyze the COVID-19 Clinical Trials dataset using the Microsoft Datasheets for Datasets framework. This approach will provide a structured method for evaluating how the dataset was collected, processed, and documented. By using these datasheet items, we show how to properly analyze real-world data while also identifying the ethical considerations, limitations, and potential risks associated with its use. This project highlights the importance of transparency, responsible data handling, and ethical reasoning in data science.
 _________________________________________________________________________________________________________________________________________________________
-## Introduction and Background
+## Introduction and Background: Convince your audience that the rest of the project is worth learning about. What interesting problem are you exploring? Why should EVERYONE be interested in your analysis?
 
-Convince your audience that the rest of the project is worth learning about. 
-What interesting problem are you exploring? Why should EVERYONE be interested in your analysis?
+The COVID-19 pandemic was one of the most global scientific efforts ever. Researchers around the world conducted many clinical trials to test vaccines and treatments. These trials produced an enormous amount of data. Which most of it became publicly accessible. So, we can analyze this COVID-19 trial data such as how the data was collected? How it was processed? And whether it can be responsibly used.
 
+We are exploring the COVID-19 Clinical Trials dataset using the items of Microsoft Datasheets for Datasets framework. We are looking for the dataset’s origins, limits, ethical concerns, and potential biases. This is important because companies will use datasheet items to analyze datasets like these especially human subjects, often containing hidden issues that can affect the accuracy and fairness of the conclusions made. 
+
+Everyone should be interested in this analysis because COVID-19 impacted everyone in the world. So checking this dataset's reliablability, fairness, and accuracy will make sure that we can depend on the items in the datasheet so that the data in the dataset that anyone can have access to is reliable. 
 _________________________________________________________________________________________________________________________________________________________
-## Data Colleciton Considerations
+## Data Colleciton Considerations Using the Microsft Datasheet Format: 
 
-1.1 Why was the dataset created?
+First, we need to ask what is the motivation for the dataset creation? So we ask...
 
-To provide a consolidated list of COVID-19 related clinical trials conducted globally.
+Why was the dataset created? (e.g., were there specific tasks in mind, or a specific gap that needed to be filled?)
 
-The intended purpose appears to be exploratory data analysis, trend visualization, and educational use on Kaggle.
+The dataset was created to provide a list of COVID-19 related clinical trials conducted globally. The intended purpose appears to be exploratory data analysis, trend visualization, and educational use on Kaggle.
 
-1.2 Who created the dataset?
+What other tasks could the dataset be used for? Are there obvious tasks for which it should not be used?
+Trial landscape & meta-research: descriptive statistics and visualizations of numbers of trials by phase, intervention type, sponsor type, geographic location, and time (e.g., monthly new registrations). 
+Kaggle
 
-The dataset was uploaded and curated by Kaggle user Parul Pandey.
+NLP / information extraction: build models to extract structured fields from trial XML (e.g., interventions, eligibility criteria, outcomes), to standardize intervention names, or to create ontologies/term mappings. 
 
-Trial metadata originally comes from public trial registries (e.g., ClinicalTrials.gov).
 
-1.3 What tasks is the dataset intended to support?
-
-Summaries of global COVID-19 clinical research activity
-
-Exploratory analysis
-
-Visualization of trial types, phases, sponsors, enrollment
-
-Meta-analysis of trial characteristics (NOT patient outcomes)
-
-1.4 What tasks should NOT be done with the dataset?
-
-Individual patient-level inference (dataset contains no patient-level sensitive data, but users should not attempt to infer it).
-
-Medical decision-making.
-
-Claiming causal conclusions about treatment effectiveness.
-
-Linking to other datasets for identification.
-________________________________________________________________________________________________________________________
-
-2.1 What does the dataset contain?
-
-Typically includes metadata such as:
-
-Trial ID (NCT Number)
-
-Trial title
-
-Study type (interventional, observational)
-
-Sponsor information
-
-Enrollment size (aggregate)
-
-Study phase
-
-Intervention type
-
-Outcome measures
-
-Study start/end dates
-
-Locations
-
-Recruitment status
-
-2.2 What does the dataset not include?
-
-No individual patient-level data
-
-No identifiable personal information
-
-No detailed clinical outcome data
-
-No consent forms or trial protocols
-
-2.3 Is any sensitive information included?
-
-No direct personal health information.
-
-But: Aggregate counts (e.g., enrollment) still originate from human subject research — should be treated respectfully and ethically.
-
-2.4 Are there missing values, inconsistencies, or noise?
-
-Likely yes:
-
-Missing trial phases
-
-Undefined interventions
-
-Outdated recruitment status
-
-Categorical inconsistencies (common across scraped datasets)
-
-________________________________________________________________________________________________________________________
-
-2.1 What does the dataset contain?
-
-Typically includes metadata such as:
-
-Trial ID (NCT Number)
-
-Trial title
-
-Study type (interventional, observational)
-
-Sponsor information
-
-Enrollment size (aggregate)
-
-Study phase
-
-Intervention type
-
-Outcome measures
-
-Study start/end dates
-
-Locations
-
-Recruitment status
-
-2.2 What does the dataset not include?
-
-No individual patient-level data
-
-No identifiable personal information
-
-No detailed clinical outcome data
-
-No consent forms or trial protocols
-
-2.3 Is any sensitive information included?
-
-No direct personal health information.
-
-But: Aggregate counts (e.g., enrollment) still originate from human subject research — should be treated respectfully and ethically.
-
-2.4 Are there missing values, inconsistencies, or noise?
-
-Likely yes:
-
-Missing trial phases
-
-Undefined interventions
-
-Outdated recruitment status
-
-Categorical inconsistencies (common across scraped datasets)
-__________________________________________________________________________________________________________________________________________________
-
-3.1 How was the data collected?
-
-Most likely scraped, extracted, or downloaded from ClinicalTrials.gov and other public registries.
-
-The Kaggle author cleaned and reformatted it.
-
-3.2 Is the original data source public?
-
-Yes — clinical trial registries are legally required to be publicly accessible.
-
-3.3 Was consent obtained for data sharing?
-
-Patient-level consent is part of the original trial design, NOT required for metadata sharing
-
-Metadata (titles, enrollment, endpoints) is legally public.
-
-3.4 Potential risks in collection?
-
-Web-scraping errors
-
-Incomplete metadata
-
-Versioning issues (trial updates not automatically synced)
-__________________________________________________________________________________________________________________________________________________
-
-4.1 What transformations were applied?
-
-Reformatting
-
-Consolidation from multiple registry sources
-
-Removal of duplicate trials
-
-Conversion to CSV
-
-Possible renaming of columns
-
-Standardization of categorical fields
-
-4.2 Was any anonymization needed?
-
-No — because no patient-level data was included.
-
-4.3 Known issues from preprocessing?
-
-Loss of detail from original registry
-
-Potential misclassification of phase or intervention
-
-Dates may have been simplified or converted incorrectly
-
-Some fields may not match ClinicalTrials.gov exactly
-__________________________________________________________________________________________________________________________________________________
-5.1 Appropriate uses
-
-Educational purposes
-
-Visualization of trends
-
-Analysis of trial growth over time
-
-Comparing types and phases of studies
-
-Understanding global research focus during COVID-19
-
-5.2 Inappropriate or harmful uses
-
-Claiming clinical conclusions from metadata alone
-
-Misrepresenting trial outcomes
-
-Attempting to reconstruct patient-level data
-
-Policy-making decisions without original trial review
-
-Using the dataset to claim treatment efficacy
-
-5.3 Who is the intended audience?
-
-Students
-
-Data scientists
-
-Public health researchers
-
-Journalists
-
-Non-experts learning exploratory data analysis
-__________________________________________________________________________________________________________________________________________________
-6.1 Where is the dataset hosted?
-
-On Kaggle:
-COVID-19 Clinical Trials Dataset (URL in your assignment)
-
-6.2 What is the license?
-
-Kaggle datasets usually default to CC-BY-NC unless otherwise noted.
-
-Users must verify the licensing on the dataset page.
-
-6.3 Are there restrictions on sharing?
-
-Must credit both Kaggle uploader and the original registry.
-
-Cannot redistribute with identifiable patient data (not applicable here).
-
-Cannot claim the dataset is official or complete
-__________________________________________________________________________________________________________________________________________________
-8. Maintenance
-
-8.1 Who maintains the dataset?
-
-The Kaggle uploader (Parul Pandey)
-
-Kaggle platform itself does not guarantee updates
-
-8.2 Update frequency
-
-Likely not regularly updated
-
-COVID-19 trials changed rapidly, so the dataset may be outdated
-
-8.3 How can issues be reported?
-
-Through Kaggle’s comment/discussion section
-
-By cross-checking with ClinicalTrials.gov entries and reporting inconsistencies
-__________________________________________________________________________________________________________________________________________________
-
-Give some background about your data. Where did you get it? How was it compiled? How many observations? What are the variables? 
-
-Show a data frame with the most important columns.
-
-Do some descriptive statistics and talk about the results.
-
-__________________________________________________________________________________________________________________________________________________
 
 ## Exploratory Data Analysis
 
