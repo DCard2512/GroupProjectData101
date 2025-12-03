@@ -16,7 +16,7 @@ Everyone should be interested in this analysis because COVID-19 impacted everyon
 _________________________________________________________________________________________________________________________________________________________
 ## Data Colleciton Considerations Using the Microsoft Datasheet Format: 
 
-### First, we need to ask what is the motivation for the dataset creation? So we ask...
+### Motivation for Dataset Creation? 
 
 Why was the dataset created? (e.g., were there specific tasks in mind, or a specific gap that needed to be filled?)
 
@@ -39,7 +39,7 @@ Pier Paolo Ippolito
 
 Wider literature using ClinicalTrials.gov data: Many peer-reviewed papers have used ClinicalTrials.gov (the original registry) to analyze COVID-19 trials (e.g., systematic summaries and results-timeliness studies). If you need peer-reviewed comparisons, cite studies that use ClinicalTrials.gov extracts (examples: JAMIA Open analysis of ClinicalTrials.gov COVID-19 studies and papers on results availability / timeliness). These studies typically describe their extraction and analysis pipelines so others can compare. 
 _________________________________________________________________________________________________________________________________________________________
-## Next, we need to analyze the Datasets Compostition:
+## Dataset's Compostition:
 
 What are the instances? (that is, examples; e.g., documents, images, people, countries) Are there multiple types of instances? (e.g., movies, users, ratings; people, interactions between them; nodes, edges)
 
@@ -67,7 +67,7 @@ Does this dataset collection/processing procedure achieve the motivation for cre
 Any other comments?
 
 _________________________________________________________________________________________________________________________________________________________
-## Next we need to analyze the Data Collection Process:
+## Data Collection Process:
 
 How was the data collected? (e.g., hardware apparatus/sensor, manual human curation, software program, software interface/API; how were these constructs/measures/methods validated?)
 
@@ -89,7 +89,7 @@ Are there any known errors, sources of noise, or redundancies in the data?
 
 Any other comments?
 _________________________________________________________________________________________________________________________________________________________
-## Next we can analzye how is the Dataset Distributed 
+## Dataset Distribution 
 How is the dataset distributed? (e.g., website, API, etc.; does the data have a DOI; is it archived redundantly?)
 
 When will the dataset be released/first distributed? (Is there a canonical paper/reference for this dataset?)
@@ -103,14 +103,14 @@ Are there any fees or access/export restrictions?
 
 
 _________________________________________________________________________________________________________________________________________________________
-## Next we can analyze Data Preprocessing
+## Data Preprocessing:
 
 What preprocessing/cleaning was done? (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values, etc.)
 
 Was the “raw” data saved in addition to the preprocessed/cleaned data? (e.g., to support unanticipated future uses)
 
 _________________________________________________________________________________________________________________________________________________________
-## Lastly, we can analyze the Dataset Maintenance
+## Dataset Maintenance:
 
 Who is supporting/hosting/maintaining the dataset? How does one contact the owner/curator/manager of the dataset (e.g. email address, or other contact info)?
 
@@ -128,14 +128,11 @@ If others want to extend/augment/build on this dataset, is there a mechanism for
 
 Any other comments?
 _________________________________________________________________________________________________________________________________________________________
-
-
 ## Exploratory Data Analysis
 
 Show a few plots or some data tables that help your reader understand your data better. What are some initial questions that you were able to quickly answer? How do those questions lead you to a deeper analysis?
 
 _________________________________________________________________________________________________________________________________________________________
-
 ## Proposed Questions - Legal and Ethical Considerations 
 
 What specific questions are you going to explore and present in the rest of the paper? Give a very brief overview of what you are going to do to answer those questions. Imagine this as a road map so your reader knows what to expect. If the dataset relates to people (e.g., their attributes) or
