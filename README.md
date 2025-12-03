@@ -14,7 +14,7 @@ We are exploring the COVID-19 Clinical Trials dataset using the items of Microso
 
 Everyone should be interested in this analysis because COVID-19 impacted everyone in the world. So checking this dataset's reliablability, fairness, and accuracy will make sure that we can depend on the items in the datasheet so that the data in the dataset that anyone can have access to is reliable. 
 _________________________________________________________________________________________________________________________________________________________
-## Data Colleciton Considerations Using the Microsft Datasheet Format: 
+## Data Colleciton Considerations Using the Microsoft Datasheet Format: 
 
 ## First, we need to ask what is the motivation for the dataset creation? So we ask...
 
@@ -38,7 +38,7 @@ Cited in technical reports / project bibliographies: I found at least one projec
 Pier Paolo Ippolito
 
 Wider literature using ClinicalTrials.gov data: Many peer-reviewed papers have used ClinicalTrials.gov (the original registry) to analyze COVID-19 trials (e.g., systematic summaries and results-timeliness studies). If you need peer-reviewed comparisons, cite studies that use ClinicalTrials.gov extracts (examples: JAMIA Open analysis of ClinicalTrials.gov COVID-19 studies and papers on results availability / timeliness). These studies typically describe their extraction and analysis pipelines so others can compare. 
-
+_________________________________________________________________________________________________________________________________________________________
 ## Next, we need to analyze the Datasets Compostition:
 
 What are the instances? (that is, examples; e.g., documents, images, people, countries) Are there multiple types of instances? (e.g., movies, users, ratings; people, interactions between them; nodes, edges)
@@ -109,6 +109,24 @@ What preprocessing/cleaning was done? (e.g., discretization or bucketing, tokeni
 
 Was the “raw” data saved in addition to the preprocessed/cleaned data? (e.g., to support unanticipated future uses)
 
+_________________________________________________________________________________________________________________________________________________________
+## Lastly, we can analyze the Dataset Maintenance
+
+Who is supporting/hosting/maintaining the dataset? How does one contact the owner/curator/manager of the dataset (e.g. email address, or other contact info)?
+
+
+Will the dataset be updated? How often and by whom? How will updates/revisions be documented and communicated (e.g., mailing list, GitHub)? Is there an erratum?
+
+
+If the dataset becomes obsolete how will this be communicated?
+
+Is there a repository to link to any/all papers/systems
+that use this dataset?
+
+If others want to extend/augment/build on this dataset, is there a mechanism for them to do so? If so, is there a process for tracking/assessing the quality of those contributions. What is the process for communicating/distributing these contributions to users?
+
+
+Any other comments?
 _________________________________________________________________________________________________________________________________________________________
 
 
