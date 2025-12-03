@@ -41,89 +41,77 @@ Wider literature using ClinicalTrials.gov data: Many peer-reviewed papers have u
 
 ## Next, we need to analyze the Datasets Compostition:
 
-What are the instances? (that is, examples; e.g., docu-
-ments, images, people, countries) Are there multiple types
-of instances? (e.g., movies, users, ratings; people, interac-
-tions between them; nodes, edges)
+What are the instances? (that is, examples; e.g., documents, images, people, countries) Are there multiple types of instances? (e.g., movies, users, ratings; people, interactions between them; nodes, edges)
 
-Are relationships between instances made explicit in
-the data (e.g., social network links, user/movie ratings, etc.)?
+Are relationships between instances made explicit in the data (e.g., social network links, user/movie ratings, etc.)?
 
 
 How many instances of each type are there?
 
 
-What data does each instance consist of? “Raw” data
-(e.g., unprocessed text or images)? Features/attributes?
-Is there a label/target associated with instances? If the
-instances are related to people, are subpopulations identified
-(e.g., by age, gender, etc.) and what is their distribution?
+What data does each instance consist of? “Raw” data (e.g., unprocessed text or images)? Features/attributes?  Is there a label/target associated with instances? If the instances are related to people, are subpopulations identified (e.g., by age, gender, etc.) and what is their distribution?
 
 
-Is everything included or does the data rely on external
-resources? (e.g., websites, tweets, datasets) If external
-resources, a) are there guarantees that they will exist, and
-remain constant, over time; b) is there an official archival
-version. Are there licenses, fees or rights associated with
-any of the data?
+Is everything included or does the data rely on external resources? (e.g., websites, tweets, datasets) If external resources, a) are there guarantees that they will exist, and
+remain constant, over time; b) is there an official archival version. Are there licenses, fees or rights associated with any of the data?
 
 
-Are there recommended data splits or evaluation mea-
-sures? (e.g., training, development, testing; accuracy/AUC)
-What experiments were initially run on this dataset?
+Are there recommended data splits or evaluation measures? (e.g., training, development, testing; accuracy/AUC)
 
-
-Have a summary of those results and, if available, provide
-the link to a paper with more information here.
+What experiments were initially run on this dataset? Have a summary of those results and, if available, provide the link to a paper with more information here.
 
 Is the preprocessing software available?
 
-Does this dataset collection/processing procedure
-achieve the motivation for creating the dataset stated
-in the first section of this datasheet?
+Does this dataset collection/processing procedure achieve the motivation for creating the dataset stated in the first section of this datasheet?
 
 Any other comments?
 
 _________________________________________________________________________________________________________________________________________________________
-## 
+## Next we need to analyze the Data Collection Process:
 
-How was the data collected? (e.g., hardware ap-
-paratus/sensor, manual human curation, software pro-
-gram, software interface/API; how were these con-
-structs/measures/methods validated?)
-Who was involved in the data collection process? (e.g.,
-students, crowdworkers) How were they compensated? (e.g.,
-how much were crowdworkers paid?)
-Over what time-frame was the data collected? Does the
-collection time-frame match the creation time-frame?
-How was the data associated with each instance ac-
-quired? Was the data directly observable (e.g., raw text,
-movie ratings), reported by subjects (e.g., survey responses),
-or indirectly inferred/derived from other data (e.g., part of
-speech tags; model-based guesses for age or language)? If
-the latter two, were they validated/verified and if so how?
-Does the dataset contain all possible instances? Or is
-it, for instance, a sample (not necessarily random) from a
-larger set of instances?
-If the dataset is a sample, then what is the population?
-What was the sampling strategy (e.g., deterministic, proba-
-bilistic with specific sampling probabilities)? Is the sample
-representative of the larger set (e.g., geographic coverage)?
-If not, why not (e.g., to cover a more diverse range of in-
-stances)? How does this affect possible uses?
-Is there information missing from the dataset and why?
-(this does not include intentionally dropped instances; it
-might include, e.g., redacted text, withheld documents) Is
-this data missing because it was unavailable?
-Are there any known errors, sources of noise, or redun-
-dancies in the data?
+How was the data collected? (e.g., hardware apparatus/sensor, manual human curation, software program, software interface/API; how were these constructs/measures/methods validated?)
+
+Who was involved in the data collection process? (e.g.,students, crowdworkers) How were they compensated? (e.g., how much were crowdworkers paid?)
+
+Over what time-frame was the data collected? Does the collection time-frame match the creation time-frame?
+
+How was the data associated with each instance acquired? Was the data directly observable (e.g., raw text, movie ratings), reported by subjects (e.g., survey responses), or indirectly inferred/derived from other data (e.g., part of speech tags; model-based guesses for age or language)? If the latter two, were they validated/verified and if so how?
+
+
+Does the dataset contain all possible instances? Or is it, for instance, a sample (not necessarily random) from a larger set of instances?
+
+If the dataset is a sample, then what is the population? What was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)? Is the sample representative of the larger set (e.g., geographic coverage)? If not, why not (e.g., to cover a more diverse range of instances)? How does this affect possible uses?
+
+Is there information missing from the dataset and why? (this does not include intentionally dropped instances; it might include, e.g., redacted text, withheld documents) Is this data missing because it was unavailable? 
+
+Are there any known errors, sources of noise, or redundancies in the data?
+
+
 Any other comments?
+_________________________________________________________________________________________________________________________________________________________
+## Next we can analzye how is the Dataset Distributed 
+How is the dataset distributed? (e.g., website, API, etc.; does the data have a DOI; is it archived redundantly?)
 
+When will the dataset be released/first distributed? (Is there a canonical paper/reference for this dataset?)
+
+What license (if any) is it distributed under? Are there any copyrights on the data?
+
+
+Are there any fees or access/export restrictions?
 
 
 
 
 _________________________________________________________________________________________________________________________________________________________
+## Next we can analyze Data Preprocessing
+
+What preprocessing/cleaning was done? (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values, etc.)
+
+Was the “raw” data saved in addition to the preprocessed/cleaned data? (e.g., to support unanticipated future uses)
+
+_________________________________________________________________________________________________________________________________________________________
+
+
 ## Exploratory Data Analysis
 
 Show a few plots or some data tables that help your reader understand your data better. What are some initial questions that you were able to quickly answer? How do those questions lead you to a deeper analysis?
