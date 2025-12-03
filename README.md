@@ -16,7 +16,7 @@ Everyone should be interested in this analysis because COVID-19 impacted everyon
 _________________________________________________________________________________________________________________________________________________________
 ## Data Colleciton Considerations Using the Microsoft Datasheet Format: 
 
-## First, we need to ask what is the motivation for the dataset creation? So we ask...
+### First, we need to ask what is the motivation for the dataset creation? So we ask...
 
 Why was the dataset created? (e.g., were there specific tasks in mind, or a specific gap that needed to be filled?)
 
