@@ -1,4 +1,4 @@
-# Title: Datasheets & Clinical Trials 
+# Title: Mini DataSheet of Covid-19 Clinical Trials Dataset
 
 #### By: Diego Cardenas & Kiran Treacy
 
@@ -20,7 +20,7 @@ ________________________________________________________________________________
 
 Why was the dataset created? (e.g., were there specific tasks in mind, or a specific gap that needed to be filled?)
 
-The dataset was created to provide a list of COVID-19 related clinical trials conducted globally. The intended purpose appears to be exploratory data analysis, trend visualization, and educational use on Kaggle.
+The dataset was created to provide a list of COVID-19 related clinical trials conducted globally. The intended purpose appears to be exploratory data analysis, trend visualization, and for educational uses on Kaggle.
 
 What other tasks could the dataset be used for? Are there obvious tasks for which it should not be used?
 Trial landscape & meta-research: descriptive statistics and visualizations of numbers of trials by phase, intervention type, sponsor type, geographic location, and time (e.g., monthly new registrations). 
