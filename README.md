@@ -1,4 +1,4 @@
-# Title: A Mini Datasheet of Covid-19 Clinical Trials Dataset Using Mircrosoft Datasheets for Datasets Framework
+# Title: The Analysis of Covid-19 Clinical Trials Dataset Using Mircrosoft Datasheets for Datasets Framework
 
 #### By: Diego Cardenas & Kiran Treacy
 
@@ -18,26 +18,27 @@ ________________________________________________________________________________
 
 ### Motivation for Dataset Creation? 
 
-Why was the dataset created? (e.g., were there specific tasks in mind, or a specific gap that needed to be filled?)
+Why was the dataset created? (e.g., were there specific
+tasks in mind, or a specific gap that needed to be filled?)
 
-The dataset was created to provide a list of COVID-19 related clinical trials conducted globally. The intended purpose appears to be exploratory data analysis, trend visualization, and for educational uses on Kaggle.
 
-What other tasks could the dataset be used for? Are there obvious tasks for which it should not be used?
-Trial landscape & meta-research: descriptive statistics and visualizations of numbers of trials by phase, intervention type, sponsor type, geographic location, and time (e.g., monthly new registrations). 
-Kaggle
+What (other) tasks could the dataset be used for? Are
+there obvious tasks for which it should not be used?
 
-NLP / information extraction: build models to extract structured fields from trial XML (e.g., interventions, eligibility criteria, outcomes), to standardize intervention names, or to create ontologies/term mappings. 
 
-Has the dataset been used for any tasks already? If so, where are the results so others can compare (e.g., links to published papers)?
 
-Kaggle notebooks / EDA: The dataset author and other users have published exploratory notebooks (example: “EDA on COVID-19 Clinical Trials” by the uploader), which show common descriptive analyses and are available on Kaggle. These notebooks are useful comparison baselines. 
-Kaggle
-+1
+Has the dataset been used for any tasks already? If so,
+where are the results so others can compare (e.g., links to
+published papers)?
 
-Cited in technical reports / project bibliographies: I found at least one project/technical PDF that cites the Kaggle dataset in its references (shows people have reused the Kaggle CSV as a convenient copy of registry entries). This is not a peer-reviewed paper but demonstrates reuse. 
-Pier Paolo Ippolito
 
-Wider literature using ClinicalTrials.gov data: Many peer-reviewed papers have used ClinicalTrials.gov (the original registry) to analyze COVID-19 trials (e.g., systematic summaries and results-timeliness studies). If you need peer-reviewed comparisons, cite studies that use ClinicalTrials.gov extracts (examples: JAMIA Open analysis of ClinicalTrials.gov COVID-19 studies and papers on results availability / timeliness). These studies typically describe their extraction and analysis pipelines so others can compare. 
+
+Who funded the creation of the dataset? If there is an
+associated grant, provide the grant number.
+
+
+
+Any other comments? 
 _________________________________________________________________________________________________________________________________________________________
 ## Dataset's Compostition:
 
@@ -92,15 +93,16 @@ ________________________________________________________________________________
 ## Dataset Distribution 
 How is the dataset distributed? (e.g., website, API, etc.; does the data have a DOI; is it archived redundantly?)
 
+
+
 When will the dataset be released/first distributed? (Is there a canonical paper/reference for this dataset?)
+
+
 
 What license (if any) is it distributed under? Are there any copyrights on the data?
 
 
 Are there any fees or access/export restrictions?
-
-
-
 
 _________________________________________________________________________________________________________________________________________________________
 ## Data Preprocessing:
