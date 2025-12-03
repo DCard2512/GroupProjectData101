@@ -1,4 +1,4 @@
-# Title: Mini DataSheet of Covid-19 Clinical Trials Dataset
+# Title: A Mini Datasheet of Covid-19 Clinical Trials Dataset Using Mircrosoft Datasheets for Datasets Framework
 
 #### By: Diego Cardenas & Kiran Treacy
 
