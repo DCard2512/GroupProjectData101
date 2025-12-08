@@ -21,22 +21,24 @@ ________________________________________________________________________________
 Why was the dataset created? (e.g., were there specific
 tasks in mind, or a specific gap that needed to be filled?)
 
+The dataset was compiled from ClinicalTrials.gov, a public registry created by U.S. law to provide transparency in clinical research. This specific collection of COVID-19 trials was likely assembled to track and analyze the global research response to the pandemic, helping identify active studies, research gaps, and trends.
 
 What (other) tasks could the dataset be used for? Are
 there obvious tasks for which it should not be used?
 
+It could be used for meta-research (analyzing trial design trends), epidemiological studies, or network analysis of research collaborations. It should not be used to guide personal medical decisions without consulting full published results.
 
 
 Has the dataset been used for any tasks already? If so,
 where are the results so others can compare (e.g., links to
 published papers)?
 
-
+Data from ClinicalTrials.gov is widely used in systematic reviews and research papers analyzing the COVID-19 research landscape. Results are found in academic journals
 
 Who funded the creation of the dataset? If there is an
 associated grant, provide the grant number.
 
-
+The registry itself is funded by the U.S. National Institutes of Health (NIH). Individual trials within it list various funders
 
 Any other comments? 
 _________________________________________________________________________________________________________________________________________________________
@@ -44,26 +46,58 @@ ________________________________________________________________________________
 
 What are the instances? (that is, examples; e.g., documents, images, people, countries) Are there multiple types of instances? (e.g., movies, users, ratings; people, interactions between them; nodes, edges)
 
+Each row is a registered clinical trial.
+
 Are relationships between instances made explicit in the data (e.g., social network links, user/movie ratings, etc.)?
 
+Not explicitly stated; must be inferred from shared sponsors or IDs.
 
 How many instances of each type are there?
 
+229 trial records
 
 What data does each instance consist of? “Raw” data (e.g., unprocessed text or images)? Features/attributes?  Is there a label/target associated with instances? If the instances are related to people, are subpopulations identified (e.g., by age, gender, etc.) and what is their distribution?
+
+Structured metadata (not raw data). Includes trial ID, title, status, conditions, interventions, sponsor, locations, dates, participant demographics (age, gender), and links to full records.
 
 
 Is everything included or does the data rely on external resources? (e.g., websites, tweets, datasets) If external resources, a) are there guarantees that they will exist, and
 remain constant, over time; b) is there an official archival version. Are there licenses, fees or rights associated with any of the data?
 
+The data is mostly self-contained in the CSV file (trial metadata). However, it relies on external resources for two key elements:
+
+Full Record & Updates: The URL field for each trial links to the live, updated record on ClinicalTrials.gov.
+
+Study Documents: The Study Documents field (e.g., in row 20, 71) contains links to external PDFs like protocols and statistical analysis plans.
 
 Are there recommended data splits or evaluation measures? (e.g., training, development, testing; accuracy/AUC)
 
+No. This is not a benchmark dataset for machine learning. It is a descriptive, real-world registry dataset.
+
+
 What experiments were initially run on this dataset? Have a summary of those results and, if available, provide the link to a paper with more information here.
+
+This specific CSV file is a snapshot created for analysis or sharing. Therefore, no "initial experiments" were run on this exact file as if it were a released benchmark.
 
 Is the preprocessing software available?
 
+There is no specific "preprocessing software" for this snapshot.
+
+
 Does this dataset collection/processing procedure achieve the motivation for creating the dataset stated in the first section of this datasheet?
+
+Achieves the Motivation:
+The dataset successfully fulfills its core purpose of providing transparency. It allows anyone to see:
+
+What COVID-19 trials were registered.
+
+Who is sponsoring them.
+
+Where they are being conducted.
+
+Their design (intervention, endpoints).
+
+Their current status (Recruiting, Completed, etc.).
 
 Any other comments?
 
@@ -72,20 +106,44 @@ ________________________________________________________________________________
 
 How was the data collected? (e.g., hardware apparatus/sensor, manual human curation, software program, software interface/API; how were these constructs/measures/methods validated?)
 
+Data was collected via manual human entry into a structured web-based software program—the ClinicalTrials.gov Protocol Registration and Results System (PRS). The PRS includes automated validation rules (e.g., required fields, date formats, controlled vocabularies for Study Type and Phases). 
+
 Who was involved in the data collection process? (e.g.,students, crowdworkers) How were they compensated? (e.g., how much were crowdworkers paid?)
+
+The data was entered by authorized representatives of the clinical trial sponsors or principal investigators. These individuals were not paid for the act of data entry itself
 
 Over what time-frame was the data collected? Does the collection time-frame match the creation time-frame?
 
+The data for each trial was entered and updated sporadically over the lifetime of that trial, from its initial registration. This specific CSV file is a point-in-time snapshot extracted at a single moment. The collection is an ongoing process for each trial.
+
 How was the data associated with each instance acquired? Was the data directly observable (e.g., raw text, movie ratings), reported by subjects (e.g., survey responses), or indirectly inferred/derived from other data (e.g., part of speech tags; model-based guesses for age or language)? If the latter two, were they validated/verified and if so how?
 
+The data is reported by subjects—specifically, by the trial organizers (sponsors/investigators). As noted, validation occurs at the point of entry (formatting, required fields). NLM staff perform QC on select fields
 
 Does the dataset contain all possible instances? Or is it, for instance, a sample (not necessarily random) from a larger set of instances?
 
+No. This dataset is a sample from a larger universe.
+
 If the dataset is a sample, then what is the population? What was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)? Is the sample representative of the larger set (e.g., geographic coverage)? If not, why not (e.g., to cover a more diverse range of instances)? How does this affect possible uses?
+All clinical trials conducted worldwide that involve human participants and are related to COVID-19/SARS-CoV-2.
+Sampling Strategy: Deterministic, but incomplete.
+includes all trials registered on ClinicalTrials.gov that matched the search criteria for COVID-19 at the time of export.
+Representativeness: The sample is not fully representative of the global population of COVID-19 trials.
+Effect on Use: Analyses of geographic distribution, sponsor networks, and intervention types will be skewed. 
+
 
 Is there information missing from the dataset and why? (this does not include intentionally dropped instances; it might include, e.g., redacted text, withheld documents) Is this data missing because it was unavailable? 
 
+Yes, significantly.
+
+Study Results: The Study Results column is overwhelmingly "No Results Available." This is the most critical missing information.
+
+
 Are there any known errors, sources of noise, or redundancies in the data?
+
+Human Entry Errors: Typos, inconsistent terminology (e.g., "Covid19" vs. "COVID-19"), and misclassification in free-text fields.
+
+Outdated Information: Trial Status or Completion Date may be outdated if sponsors fail to update the record.
 
 
 Any other comments?
