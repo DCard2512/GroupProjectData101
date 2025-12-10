@@ -1,4 +1,4 @@
-# Title: The Analysis of Covid-19 Clinical Trials Dataset Using Mircrosoft Datasheets for Datasets Framework
+# Title: The Analysis of Covid-19 Clinical Trials Dataset Using Microsoft Datasheets for Datasets Framework
 
 #### By: Diego Cardenas & Kiran Treacy
 
